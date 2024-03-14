@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_light"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".lengthConverter">
+
+
+    <TextView
+        android:id="@+id/lengthTitle"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Length Converter"
+        android:paddingTop="10dp"
+        android:textSize="40dp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/sourceValue"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Enter Value"
+        android:textColor="@color/white"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/convertedValue"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Converted Value"
+        android:textColor="@color/white"
+        android:textSize="35sp" />
+
+    <Spinner
+        android:id="@+id/sourceSpinner"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="-293dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp" />
+
+
+    <Spinner
+        android:id="@+id/destinationSpinner"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_margin="50dp"
+        android:layout_gravity="center"
+        android:text="Convert"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
